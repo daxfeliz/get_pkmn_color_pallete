@@ -4,10 +4,20 @@ def get_pkmn_pallete(pkmn_name):
     import io
     from colorthief import ColorThief
     
-    #check for upper case spelling, must be lowercase for Pokemon Database
+    #check if pokedex ID or pokemon name is input
+    if pkmn_name.isnumeric()==True:
+        import requests
+        import json
+        #need to get pokemon name, let's use https://pokeapi.co/
+        url = ('http://pokeapi.co/api/v2/pokemon/' + pkmn_name ) # URL from pokeapi.co using pokemon list API
+        r = requests.get(url)
+        pokedex_data = json.loads(r.text)
+        pkmn_name = pokedex_data[u'name']
+    
+    #check for upper case spelling, must be lowercase
     if pkmn_name[0].isupper()==True:
         pkmn_name=pkmn_name.lower()
-    
+    print('getting',pkmn_name,'sprite colors!')
     sprite_url = 'https://img.pokemondb.net/artwork/large/'+str(pkmn_name)+'.jpg'
 
 #     fd = urlopen(sprite_url)
