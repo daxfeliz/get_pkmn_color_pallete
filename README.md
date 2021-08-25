@@ -18,6 +18,8 @@ Example usage:
     
     pkmn='calyrex'
     
+    pkmn=str(413)
+    
     colors = get_pkmn_pallete(pkmn)
     
     for x in range(len(colors)):
