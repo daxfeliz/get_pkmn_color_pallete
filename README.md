@@ -2,6 +2,7 @@
 Can't choose your favorite color palette? Choose your favorite pokemon! 
 
 This code is depends on colortheif ( https://github.com/fengsp/color-thief-py ) which is easy to install via pip:
+
 pip install colorthief
 
 All you you need is to enter your favorite pokemon's name!
