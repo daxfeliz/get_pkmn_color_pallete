@@ -1,5 +1,5 @@
 # get_pkmn_color_pallete
-Can't choose your favorite color pallete? Choose your favorite pokemon! 
+Can't choose your favorite color palette? Choose your favorite pokemon! 
 
 This code is depends on colortheif ( https://github.com/fengsp/color-thief-py ) which is easy to install via pip:
 pip install colorthief
