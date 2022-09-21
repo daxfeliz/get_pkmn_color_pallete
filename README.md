@@ -38,4 +38,4 @@ Example usage:
     plt.show()
 
 
-![](pkmn_pallete.png?raw=true)
+![pkmn_pallete.png](pkmn_pallete.png)
